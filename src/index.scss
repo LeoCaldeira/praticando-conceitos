@@ -1,0 +1,41 @@
+@import "./colors.scss";
+
+body,
+* {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+html,
+body,
+#root,
+.App,
+.App > div {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+    color: $gray-100;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(228, 228, 228);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(192, 192, 192);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(170, 170, 170);
+}

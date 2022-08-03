@@ -1,0 +1,65 @@
+@import "../../colors.scss";
+
+.todo-wrapper {
+    width: 100%;
+
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 18px;
+    background-color: $gray-500;
+    margin-bottom: 8px;
+
+    display: grid;
+    grid-template-columns: 32px 1fr 32px;
+    gap: 8px;
+
+    .radio-button {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        border: 2px solid $blue;
+        cursor: pointer;
+
+        svg {
+            height: 14px;
+        }
+        &:hover {
+            filter: brightness(75%);
+        }
+    }
+
+    .image-content {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            filter: brightness(75%);
+        }
+    }
+
+    .title-wrapper {
+        text-decoration: line-through;
+        color: $gray-300;
+    }
+
+    .remove-todo {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        svg {
+            fill: $gray-300;
+
+            &:hover {
+                fill: $danger;
+            }
+        }
+    }
+
+    &:last-child {
+        margin: 0;
+    }
+}
